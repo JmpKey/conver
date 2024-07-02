@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>719</width>
+    <height>292</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="menuf">
+   <widget class="QListWidget" name="lw_pointer">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>531</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>19</y>
+      <width>156</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="1">
+      <widget class="QComboBox" name="cb_quality_a">
+       <item>
+        <property name="text">
+         <string>96</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>128</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>256</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lab_quality_a">
+       <property name="text">
+        <string>Bitrate A</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="cb_format">
+       <item>
+        <property name="text">
+         <string>avi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mp4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mkv</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>webm</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>wmv</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mp3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>opus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>flac</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="cb_quality_v">
+       <item>
+        <property name="text">
+         <string>500</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1500</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4000</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lab_format">
+       <property name="text">
+        <string>Format</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lab_quality_v">
+       <property name="text">
+        <string>Bitrate V</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>719</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_add"/>
+    <addaction name="action_op_pattern"/>
+    <addaction name="action_save_pattern"/>
+   </widget>
+   <widget class="QMenu" name="menu_management">
+    <property name="title">
+     <string>Management</string>
+    </property>
+    <addaction name="action_convert"/>
+    <addaction name="action_stop"/>
+    <addaction name="action_del_list"/>
+    <addaction name="action_del"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_management"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_add">
+   <property name="text">
+    <string>Add video</string>
+   </property>
+  </action>
+  <action name="action_convert">
+   <property name="text">
+    <string>Convert</string>
+   </property>
+  </action>
+  <action name="action_stop">
+   <property name="text">
+    <string>Stop task</string>
+   </property>
+  </action>
+  <action name="action_op_pattern">
+   <property name="text">
+    <string>Open pattern</string>
+   </property>
+  </action>
+  <action name="action_save_pattern">
+   <property name="text">
+    <string>Save pattern</string>
+   </property>
+  </action>
+  <action name="action_del">
+   <property name="text">
+    <string>Clear list</string>
+   </property>
+  </action>
+  <action name="action_del_list">
+   <property name="text">
+    <string>Delete video</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
