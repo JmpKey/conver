@@ -9,4 +9,4 @@ Graphic muzzle for FFmpeg
 The template format is like this: "Parameter=property". There are examples of templates. See the pattern.conf file.
 
 # This program is dedicated to the public domain.
-Подробнее в файле LICENSE.
+For more information, see the LICENSE file.
